@@ -1,0 +1,3124 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#nav1{
+    width: 100%;
+    height: 65px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 99999;
+}
+
+#nav1-part1 h1{
+    margin-left: 3vw;
+    color: white;
+    font-size: 2.8vw;
+}
+#nav1-part2 a{
+    text-decoration: none;
+    margin-right: 4vw;
+    font-size: 1.6vw;
+    color: black;
+    font-weight: 700;
+    border: 1px solid #000;
+    border-bottom-left-radius: 2.5vw;
+    border-top-right-radius: 2.5vw;
+    padding: 0.8vw 1vw;
+    background-color: rgb(175, 128, 10);
+    transition: 0.2s linear all;
+}
+#nav1-part2 a:hover{
+    background-color: white;
+    color: black;
+}
+
+#nav1-part3 a{
+    text-decoration: none;
+    margin-right: 1vw;
+    font-size: 1.6vw;
+    color: black;
+    font-weight: 700;
+    border: 1px solid #000;
+    border-bottom-left-radius: 2.5vw;
+    border-top-right-radius: 2.5vw;
+    padding: 0.8vw 1vw;
+    background-color: rgb(175, 128, 10);
+    transition: 0.2s linear all;
+}
+#nav1-part3 a:hover{
+    background-color: white;
+    color: black;
+}
+#nav1 i{
+    font-size: 1.6vw;
+    color: white;
+    margin-right: 2vw;
+    font-weight: 500;
+    display: none;
+}
+#container{
+    width: 100%;
+    height: 30vw;
+    padding-top: 10vw;
+    background-color: rgb(175, 128, 10);
+    border-bottom: 0.3vw solid #000;
+}
+#container img{
+    border-top-left-radius: 6vw;
+    border-bottom-right-radius: 4vw;
+    border: 0.1vw solid #000;
+    margin-left: 40vw;
+    margin-bottom: 4vw;
+}
+
+#container2{
+    width: 100%;
+    height: 30vw;
+    background-color: rgb(175, 128, 10);
+    display: flex;
+    padding-top: 1vw;
+}
+#left-part{
+    margin-left: 7vw;
+    margin-top: 2vw;
+}
+#left-part img{
+    border-top-left-radius: 6vw;
+    border-bottom-right-radius: 4vw;
+    border-bottom-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    border: 1px solid #000;
+}
+#right-part h1{
+    font-size: 2vw;
+    margin-left: 19vw;
+    padding-top: 2vw;
+}
+#right-part p{
+    font-size: 1.2vw;
+    margin-left: 19vw;
+    padding-top: 2vw;
+    line-height: 1.5vw;
+    letter-spacing: 0.1vw;
+}
+#footer1{
+    width: 100%;
+    height: 28vh;
+    background-color: black;
+    color: white;
+    padding-top: 2vw;
+}
+#footer1-left{
+    padding-left: 4vw;
+    line-height: 1vw;
+    color: rgba(26, 226, 76, 0.774);
+}
+#footer1-left h1:nth-child(1){
+    font-size: 1.6vw;
+    font-weight: 100;
+}
+#footer1-left h1:nth-child(2){
+    font-size: 1vw;
+    margin-left: 7.5vw;
+    font-weight: 100;
+}
+#footer1-left h1:nth-child(3){
+    font-size: 1vw;
+    margin-left: 7.5vw;
+    font-weight: 100;
+}
+#footer1-left h1:nth-child(4){
+    font-size: 1vw;
+    margin-left: 7.5vw;
+    font-weight: 100;
+}
+#footer1 h4:nth-child(2){
+    font-size: 0.8vw;
+    margin-left: 45vw;
+    margin-top: 2vw;
+}
+#footer1 h4:nth-child(3){
+    font-size: 0.6vw;
+    margin-left: 46.1vw;
+}
+
+/*responsive main page*/
+
+@media (max-width:500px) {
+    #nav1{
+        background-color: black;
+        height:12vw;
+        width: 100%;
+    }
+    #nav1-part1 h1{
+        font-size: 4vw;
+    }
+    #nav1-part2 a{
+        font-size: 2vw;
+    }
+    #nav1-part3 a{
+        font-size: 2vw;
+    }
+    #nav1 i{
+        display: none;
+        font-size: 5.8vw;
+    }
+    #container{
+        flex-direction: column;
+        height: 75vw;
+        width: 100%;
+        border-bottom: 0.6vw solid #000;
+        padding-top: 15vw;
+        text-align: center;
+    }
+    #container img{
+        width: 50%;
+        margin-top: 6vw;
+        margin-bottom: 10vw;
+        margin-left: 25vw;
+        border-top-left-radius: 9vw;
+        border-bottom-right-radius: 9vw;
+    }
+    #container2{
+        flex-direction: column;
+        height: 110vh;
+        width: 100%;
+        padding-top: 4vw;
+    }
+    #left-part img{
+        border-top-left-radius: 9vw;
+        border-bottom-right-radius: 9vw;
+        border-bottom-left-radius: 2vw;
+        border-top-right-radius: 2vw;
+        width: 80%;
+        margin-bottom: 4vw;
+    }
+    #right-part h1{
+        font-size: 8vw;
+        margin-top: 2vw;
+        margin-left: 10vw;
+    }
+    #right-part p{
+        font-size: 4vw;
+        line-height: 7vw;
+        letter-spacing: 0.2vw;
+        margin-left: 10vw;
+        margin-top: 1vw;
+        width: 80%;
+    }
+    #footer1{
+        width: 100%;
+        height: 23vh;
+        padding-top: 10vw;
+    }
+    #footer1-left h1:nth-child(1){
+        margin-left: 4vw;
+        font-size: 5vw;
+        font-weight: 700;
+    }
+    #footer1-left h1:nth-child(2){
+        margin-left: 4vw;
+        font-size: 2.6vw;
+        margin-top: 4vw;
+        color: white;
+    }
+    #footer1-left h1:nth-child(3){
+        margin-left: 4vw;
+        font-size: 2.6vw;
+        margin-top: 2vw;
+        color: white;
+    }
+    #footer1-left h1:nth-child(4){
+        margin-left: 4vw;
+        font-size: 2.6vw;
+        margin-top: 2vw;
+        color: white;
+    }
+    #footer1 h4:nth-child(2){
+        font-size: 2.2vw;
+        margin-top: 6vw;
+        color: white;
+        margin-left: 40vw;
+    }
+    #footer1 h4:nth-child(3){
+        font-size: 1.4vw;
+        margin-top: 1.6vw;
+        margin-left: 44vw;
+        color: white;
+    }
+}
+
+
+#categories{
+    width: 100%;
+    padding-top: 4.8vw;
+}
+#categories-container1{
+    width: 100%;
+    height: 22vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container1 #box1{
+    width: 14vw;
+    height: 14vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container1 #box1 img{
+    width: 14vw;
+    height: 14vw;
+}
+#categories-container1 #box2{
+    width: 14vw;
+    height: 14vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container1 #box2 img{
+    width: 14vw;
+    height: 14vw;
+}
+#categories-container1 #box3{
+    width: 14vw;
+    height: 14vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container1 #box3 img{
+    width: 14vw;
+    height: 14vw;
+}
+#categories-container1 #box4{
+    width: 14vw;
+    height: 14vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container1 #box4 img{
+    width: 14vw;
+    height: 14vw;
+}
+#categories-container2{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container2 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container2 #box1 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container2 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container2 #box2 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container2 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container2 #box3 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container2 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container2 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container2 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+
+#categories-container3{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container3 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container3 #box1 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container3 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container3 #box2 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container3 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container3 #box3 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container3 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container3 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container3 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+
+#categories-container4{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container4 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container4 #box1 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container4 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container4 #box2 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container4 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container4 #box3 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container4 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container4 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container4 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+
+#categories-container5{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container5 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container5 #box1 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container5 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container5 #box2 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container5 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container5 #box3 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container5 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container5 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container5 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+
+
+#categories-container6{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container6 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container6 #box1 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container6 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container6 #box2 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container6 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container6 #box3 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container6 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container6 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container6 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+
+#categories-container7{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container7 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container7 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container7 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container7 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container7 #box1 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container7 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container7 #box2 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container7 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container7 #box3 img{
+    width: 20vw;
+    height: 20vw;
+}
+
+#categories-container8{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container8 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container8 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container8 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container8 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container8 #box1 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container8 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container8 #box2 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container8 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container8 #box3 img{
+    width: 20vw;
+    height: 20vw;
+}
+
+#categories-container9{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container9 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container9 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container9 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container9 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container9 #box1 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container9 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container9 #box2 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container9 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container9 #box3 img{
+    width: 20vw;
+    height: 20vw;
+}
+
+#categories-container10{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container10 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container10 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container10 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container10 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container10 #box1 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container10 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container10 #box2 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container10 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container10 #box3 img{
+    width: 20vw;
+    height: 20vw;
+}
+
+#categories-container11{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container11 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container11 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container11 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container11 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container11 #box1 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container11 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container11 #box2 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container11 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container11 #box3 img{
+    width: 20vw;
+    height: 20vw;
+}
+
+#categories-container12{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container12 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container12 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container12 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container12 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container12 #box1 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container12 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container12 #box2 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container12 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container12 #box3 img{
+    width: 20vw;
+    height: 20vw;
+}
+
+#categories-container13{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container13 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container13 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container13 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container13 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container13 #box1 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container13 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container13 #box2 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container13 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container13 #box3 img{
+    width: 20vw;
+    height: 20vw;
+}
+
+#categories-container14{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container14 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container14 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container14 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container14 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container14 #box1 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container14 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container14 #box2 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container14 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container14 #box3 img{
+    width: 20vw;
+    height: 20vw;
+}
+
+#categories-container15{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container15 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container15 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container15 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container15 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container15 #box1 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container15 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container15 #box2 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container15 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container15 #box3 img{
+    width: 20vw;
+    height: 20vw;
+}
+
+#categories-container16{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container16 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container16 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container16 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container16 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container16 #box1 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container16 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container16 #box2 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container16 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container16 #box3 img{
+    width: 20vw;
+    height: 20vw;
+}
+
+#categories-container17{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container17 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container17 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container17 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container17 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container17 #box1 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container17 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container17 #box2 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container17 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container17 #box3 img{
+    width: 20vw;
+    height: 20vw;
+}
+
+#categories-container18{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container18 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container18 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container18 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container18 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container18 #box1 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container18 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container18 #box2 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container18 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container18 #box3 img{
+    width: 20vw;
+    height: 20vw;
+}
+
+#categories-container19{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container19 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container19 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container19 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container19 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container19 #box1 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container19 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container19 #box2 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container19 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container19 #box3 img{
+    width: 20vw;
+    height: 20vw;
+}
+
+#categories-container20{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container20 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container20 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container20 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container20 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container20 #box1 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container20 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container20 #box2 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container20 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container20 #box3 img{
+    width: 20vw;
+    height: 20vw;
+}
+
+#categories-container21{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container21 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container21 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container21 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container21 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container21 #box1 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container21 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container21 #box2 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container21 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container21 #box3 img{
+    width: 20vw;
+    height: 20vw;
+}
+
+#categories-container22{
+    width: 100%;
+    height: 26vw;
+    background-color: goldenrod;
+    padding: 2vw 0vw;
+    display: flex;
+    justify-content: space-around;
+}
+#categories-container22 #box1 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container22 #box2 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container22 #box3 img:hover{
+    width: 26vw;
+    height: 26vw;
+}
+#categories-container22 #box1{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container22 #box1 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container22 #box2{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container22 #box2 img{
+    width: 20vw;
+    height: 20vw;
+}
+#categories-container22 #box3{
+    width: 20vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 3vw;
+    padding: 3vw 3.6vw;
+    border: 0.3vw solid goldenrod;
+}
+#categories-container22 #box3 img{
+    width: 20vw;
+    height: 20vw;
+}
+
+#footer2{
+    width: 100%;
+    height: 18vh;
+    background-color: black;
+    color: white;
+    padding-top: 2vw;
+}
+#footer2-left{
+    padding-left: 4vw;
+    line-height: 1vw;
+    color: rgba(26, 226, 76, 0.774);
+}
+#footer2-left h1:nth-child(1){
+    font-size: 1.6vw;
+    padding-bottom: 0.6vw;
+    font-weight: 100;
+}
+#footer2-left h1:nth-child(2){
+    font-size: 1vw;
+    margin-left: 7.5vw;
+    padding-bottom: 0.2vw;
+    font-weight: 100;
+}
+#footer2-left h1:nth-child(3){
+    font-size: 1vw;
+    margin-left: 7.5vw;
+    padding-bottom: 0.2vw;
+    font-weight: 100;
+}
+#footer2-left h1:nth-child(4){
+    font-size: 1vw;
+    margin-left: 7.5vw;
+    font-weight: 100;
+}
+#footer2 h4:nth-child(2){
+    font-size: 0.8vw;
+    margin-left: 45vw;
+    margin-top: 2vw;
+}
+#footer2 h4:nth-child(3){
+    font-size: 0.6vw;
+    margin-left: 46.1vw;
+}
+
+
+#contactus-nav{
+    width: 100%;
+    height: 65px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#contactus-nav-part1 h1{
+    margin-left: 3vw;
+    color: white;
+    font-size: 2.8vw;
+}
+#contactus-nav-part2 a{
+    text-decoration: none;
+    margin-right: 4vw;
+    font-size: 1.6vw;
+    color: black;
+    font-weight: 700;
+    border: 1px solid #000;
+    border-bottom-left-radius: 2.5vw;
+    border-top-right-radius: 2.5vw;
+    padding: 0.8vw 1vw;
+    background-color: rgb(175, 128, 10);
+    transition: 0.2s linear all;
+}
+#contactus-nav-part2 a:hover{
+    background-color: white;
+    color: black;
+}
+#contactus-nav-part3 a{
+    text-decoration: none;
+    margin-right: 1vw;
+    font-size: 1.6vw;
+    color: black;
+    font-weight: 700;
+    border: 1px solid #000;
+    border-bottom-left-radius: 2.5vw;
+    border-top-right-radius: 2.5vw;
+    padding: 0.8vw 1vw;
+    background-color: rgb(175, 128, 10);
+    transition: 0.2s linear all;
+}
+#contactus-nav-part3 a:hover{
+    background-color: white;
+    color: black;
+}
+#contactus-nav i{
+    font-size: 1.6vw;
+    color: white;
+    margin-right: 2vw;
+    font-weight: 500;
+    display: none;
+}
+#contactus-container{
+    width: 80vw;
+    height: 26vw;
+    border: 0.2vw solid #000;
+    margin-left: 5vw;
+    margin-top: 5vw;
+    margin-bottom: 6vw;
+    border-top-left-radius: 6vw;
+    border-bottom-right-radius: 10vw;
+    display: flex;
+}
+#contactus-left-part label{
+    font-size: 1.6vw;
+    margin-left: 4vw;
+}
+#contactus-left-part input[type="text"]{
+    width: 40vw;
+    height: 2.6vw;
+    margin-left: 6vw;
+    margin-bottom: 40px;
+    margin-top: 4vw;
+}
+#contactus-left-part input[type="tel"]{
+    width: 40vw;
+    height: 2.6vw;
+    margin-left: 2.2vw;
+    margin-bottom: 4vw;
+}
+#contactus-left-part input[type="email"]{
+    width: 40vw;
+    height: 2.6vw;
+    margin-left: 6.2vw;
+}
+.submit{
+    width: 6vw;
+    height: 2.4vw;
+    margin-left: 15.3vw;
+    font-size: 1.4vw;
+    margin-top: 2vw;
+    border-radius: 0.5vw;
+    border: 0.2px solid #000;
+}
+.submit:hover{
+    background-color: black;
+    color: white;
+}
+.reset{
+    width: 6vw;
+    height: 2.4vw;
+    margin-left: 28vw;
+    font-size: 1.4vw;
+    border-radius: 0.5vw;
+    border: 0.2px solid #000;
+}
+.reset:hover{
+    background-color: black;
+    color: white;
+}
+#contactus-right-part{
+    padding-left: 6vw;
+    padding-top: 6vw;
+}
+
+#footer3{
+    width: 100%;
+    height: 18vh;
+    background-color: black;
+    color: white;
+    padding-top: 2vw;
+}
+#footer3-left{
+    padding-left: 4vw;
+    line-height: 1vw;
+    color: rgba(26, 226, 76, 0.774);
+}
+#footer3-left h1:nth-child(1){
+    font-size: 1.6vw;
+    padding-bottom: 0.6vw;
+    font-weight: 100;
+}
+#footer3-left h1:nth-child(2){
+    font-size: 1vw;
+    margin-left: 7.5vw;
+    padding-bottom: 0.2vw;
+    font-weight: 100;
+}
+#footer3-left h1:nth-child(3){
+    font-size: 1vw;
+    margin-left: 7.5vw;
+    padding-bottom: 0.2vw;
+    font-weight: 100;
+}
+#footer3-left h1:nth-child(4){
+    font-size: 1vw;
+    margin-left: 7.5vw;
+    font-weight: 100;
+}
+#footer3 h4:nth-child(2){
+    font-size: 0.8vw;
+    margin-left: 45vw;
+    margin-top: 2vw;
+}
+#footer3 h4:nth-child(3){
+    font-size: 0.6vw;
+    margin-left: 46.1vw;
+}
+
+/*responsive categories page*/
+
+@media (max-width:500px){
+    #nav1{
+        background-color: black;
+        height:12vw;
+        width: 100%;
+    }
+    #nav1-part1 h1{
+        font-size: 4vw;
+    }
+    #nav1-part2 a{
+        font-size: 2vw;
+    }
+    #nav1-part3 a{
+        font-size: 2vw;    
+    }
+    /*
+    #nav1 i{
+        display: block;
+        font-size: 5.8vw;
+    }*/
+
+    #footer2{
+        width: 100%;
+        height: 12vh;
+        padding-top: 10vw;
+    }
+    #footer2-left h1:nth-child(1){
+        margin-left: 4vw;
+        font-size: 5vw;
+        font-weight: 700;
+    }
+    #footer2-left h1:nth-child(2){
+        margin-left: 4vw;
+        font-size: 2.6vw;
+        margin-top: 4vw;
+        color: white;
+    }
+    #footer2-left h1:nth-child(3){
+        margin-left: 4vw;
+        font-size: 2.6vw;
+        margin-top: 2vw;
+        color: white;
+    }
+    #footer2-left h1:nth-child(4){
+        margin-left: 4vw;
+        font-size: 2.6vw;
+        margin-top: 2vw;
+        color: white;
+    }
+    #footer2 h4:nth-child(2){
+        font-size: 2.2vw;
+        margin-top: 6vw;
+        color: white;
+        margin-left: 40vw;
+    }
+    #footer2 h4:nth-child(3){
+        font-size: 1.4vw;
+        margin-top: 1.6vw;
+        margin-left: 44vw;
+        color: white;
+    }
+
+    #categories-container1{
+        flex-direction: column;
+        width: 100%;
+        height: 220vh;
+        background-color: goldenrod;
+        border-bottom: 1px solid white;
+    }
+    #categories-container1 #box1{
+        width: 30vmax;
+        height: 30vmax;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        margin-top: 10vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container1 #box1 img{
+        width: 30vmax;
+        height: 30vmax;
+    }
+    #categories-container1 #box2{
+        width: 30vmax;
+        height: 30vmax;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        margin-top: 6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container1 #box2 img{
+        width: 30vmax;
+        height: 30vmax;
+    }
+    #categories-container1 #box3{
+        width: 30vmax;
+        height: 30vmax;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        margin-top: 6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container1 #box3 img{
+        width: 30vmax;
+        height: 30vmax;
+    }
+    #categories-container1 #box4{
+        width: 30vmax;
+        height: 30vmax;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        margin-top: 6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container1 #box4 img{
+        width: 30vmax;
+        height: 30vmax;
+    }
+
+    #categories-container2{
+        flex-direction: column;
+        height: 200vh;
+        width: 100%;
+        border-bottom: 1px solid white;
+        margin-top: 4vw;
+    }
+    #categories-container2 #box1{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container2 #box1 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container2 #box2{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container2 #box2 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container2 #box3{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container2 #box3 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container2 #box1 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container2 #box2 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container2 #box3 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+
+    #categories-container3{
+        flex-direction: column;
+        height: 200vh;
+        width: 100%;
+        border-bottom: 1px solid white;
+        margin-top: 4vw;
+    }
+    #categories-container3 #box1{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container3 #box1 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container3 #box2{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container3 #box2 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container3 #box3{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container3 #box3 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container3 #box1 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container3 #box2 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container3 #box3 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+
+    #categories-container4{
+        flex-direction: column;
+        height: 200vh;
+        width: 100%;
+        border-bottom: 1px solid white;
+        margin-top: 4vw;
+    }
+    #categories-container4 #box1{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container4 #box1 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container4 #box2{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container4 #box2 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container4 #box3{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container4 #box3 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container4 #box1 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container4 #box2 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container4 #box3 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+
+    #categories-container5{
+        flex-direction: column;
+        height: 200vh;
+        width: 100%;
+        border-bottom: 1px solid white;
+        margin-top: 4vw;
+    }
+    #categories-container5 #box1{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container5 #box1 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container5 #box2{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container5 #box2 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container5 #box3{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container5 #box3 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container5 #box1 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container5 #box2 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container5 #box3 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+
+     #categories-container6{
+        flex-direction: column;
+        height: 200vh;
+        width: 100%;
+        border-bottom: 1px solid white;
+        margin-top: 4vw;
+    }
+    #categories-container6 #box1{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container6 #box1 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container6 #box2{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container6 #box2 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container6 #box3{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        padding: 3vw 3.6vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container6 #box3 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container6 #box1 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container6 #box2 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container6 #box3 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+
+    #categories-container7{
+        flex-direction: column;
+        height: 200vh;
+        width: 100%;
+        border-bottom: 1px solid white;
+        margin-top: 4vw;
+    }
+    #categories-container7 #box1{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+        margin-top: 4vw;
+    }
+    #categories-container7 #box1 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container7 #box2{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container7 #box2 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container7 #box3{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container7 #box3 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container7 #box1 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container7 #box2 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container7 #box3 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+
+    #categories-container8{
+        flex-direction: column;
+        height: 200vh;
+        width: 100%;
+        border-bottom: 1px solid white;
+        margin-top: 4vw;
+    }
+    #categories-container8 #box1{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+        margin-top: 4vw;
+    }
+    #categories-container8 #box1 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container8 #box2{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container8 #box2 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container8 #box3{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container8 #box3 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container8 #box1 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container8 #box2 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container8 #box3 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+
+    #categories-container9{
+        flex-direction: column;
+        height: 200vh;
+        width: 100%;
+        border-bottom: 1px solid white;
+        margin-top: 4vw;
+    }
+    #categories-container9 #box1{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+        margin-top: 4vw;
+    }
+    #categories-container9 #box1 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container9 #box2{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container9 #box2 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container9 #box3{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container9 #box3 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container9 #box1 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container9 #box2 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container9 #box3 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+
+    #categories-container10{
+        flex-direction: column;
+        height: 200vh;
+        width: 100%;
+        border-bottom: 1px solid white;
+        margin-top: 4vw;
+    }
+    #categories-container10 #box1{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+        margin-top: 4vw;
+    }
+    #categories-container10 #box1 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container10 #box2{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container10 #box2 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container10 #box3{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container10 #box3 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container10 #box1 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container10 #box2 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container10 #box3 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+
+    #categories-container11{
+        flex-direction: column;
+        height: 200vh;
+        width: 100%;
+        border-bottom: 1px solid white;
+        margin-top: 4vw;
+    }
+    #categories-container11 #box1{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+        margin-top: 4vw;
+    }
+    #categories-container11 #box1 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container11 #box2{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container11 #box2 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container11 #box3{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container11 #box3 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container11 #box1 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container11 #box2 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container11 #box3 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+
+    #categories-container12{
+        flex-direction: column;
+        height: 200vh;
+        width: 100%;
+        border-bottom: 1px solid white;
+        margin-top: 4vw;
+    }
+    #categories-container12 #box1{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+        margin-top: 4vw;
+    }
+    #categories-container12 #box1 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container12 #box2{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container12 #box2 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container12 #box3{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container12 #box3 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container12 #box1 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container12 #box2 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container12 #box3 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+
+    #categories-container13{
+        flex-direction: column;
+        height: 200vh;
+        width: 100%;
+        border-bottom: 1px solid white;
+        margin-top: 4vw;
+    }
+    #categories-container13 #box1{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+        margin-top: 4vw;
+    }
+    #categories-container13 #box1 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container13 #box2{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container13 #box2 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container13 #box3{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container13 #box3 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container13 #box1 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container13 #box2 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container13 #box3 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+
+    #categories-container14{
+        flex-direction: column;
+        height: 200vh;
+        width: 100%;
+        border-bottom: 1px solid white;
+        margin-top: 4vw;
+    }
+    #categories-container14 #box1{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+        margin-top: 4vw;
+    }
+    #categories-container14 #box1 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container14 #box2{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container14 #box2 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container14 #box3{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container14 #box3 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container14 #box1 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container14 #box2 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container14 #box3 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+
+    #categories-container15{
+        flex-direction: column;
+        height: 200vh;
+        width: 100%;
+        border-bottom: 1px solid white;
+        margin-top: 4vw;
+    }
+    #categories-container15 #box1{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+        margin-top: 4vw;
+    }
+    #categories-container15 #box1 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container15 #box2{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container15 #box2 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container15 #box3{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container15 #box3 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container15 #box1 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container15 #box2 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container15 #box3 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+
+    #categories-container16{
+        flex-direction: column;
+        height: 200vh;
+        width: 100%;
+        border-bottom: 1px solid white;
+        margin-top: 4vw;
+    }
+    #categories-container16 #box1{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+        margin-top: 4vw;
+    }
+    #categories-container16 #box1 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container16 #box2{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container16 #box2 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container16 #box3{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container16 #box3 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container16 #box1 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container16 #box2 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container16 #box3 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+
+    #categories-container17{
+        flex-direction: column;
+        height: 200vh;
+        width: 100%;
+        border-bottom: 1px solid white;
+        margin-top: 4vw;
+    }
+    #categories-container17 #box1{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+        margin-top: 4vw;
+    }
+    #categories-container17 #box1 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container17 #box2{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container17 #box2 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container17 #box3{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container17 #box3 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container17 #box1 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container17 #box2 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container17 #box3 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+
+    #categories-container18{
+        flex-direction: column;
+        height: 200vh;
+        width: 100%;
+        border-bottom: 1px solid white;
+        margin-top: 4vw;
+    }
+    #categories-container18 #box1{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+        margin-top: 4vw;
+    }
+    #categories-container18 #box1 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container18 #box2{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container18 #box2 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container18 #box3{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container18 #box3 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container18 #box1 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container18 #box2 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container18 #box3 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+
+    #categories-container19{
+        flex-direction: column;
+        height: 200vh;
+        width: 100%;
+        border-bottom: 1px solid white;
+        margin-top: 4vw;
+    }
+    #categories-container19 #box1{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+        margin-top: 4vw;
+    }
+    #categories-container19 #box1 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container19 #box2{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container19 #box2 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container19 #box3{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container19 #box3 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container19 #box1 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container19 #box2 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container19 #box3 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+
+    #categories-container20{
+        flex-direction: column;
+        height: 200vh;
+        width: 100%;
+        border-bottom: 1px solid white;
+        margin-top: 4vw;
+    }
+    #categories-container20 #box1{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+        margin-top: 4vw;
+    }
+    #categories-container20 #box1 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container20 #box2{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container20 #box2 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container20 #box3{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container20 #box3 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container20 #box1 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container20 #box2 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container20 #box3 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+
+    #categories-container21{
+        flex-direction: column;
+        height: 200vh;
+        width: 100%;
+        border-bottom: 1px solid white;
+        margin-top: 4vw;
+    }
+    #categories-container21 #box1{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+        margin-top: 4vw;
+    }
+    #categories-container21 #box1 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container21 #box2{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container21 #box2 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container21 #box3{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container21 #box3 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container21 #box1 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container21 #box2 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container21 #box3 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+
+    #categories-container22{
+        flex-direction: column;
+        height: 200vh;
+        width: 100%;
+        border-bottom: 1px solid white;
+        margin-top: 4vw;
+    }
+    #categories-container22 #box1{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+        margin-top: 4vw;
+    }
+    #categories-container22 #box1 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container22 #box2{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container22 #box2 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container22 #box3{
+        width: 60vw;
+        height: 60vw;
+        border-radius: 4vw;
+        border: 0.3vw solid goldenrod;
+        margin-bottom: 4vw;
+    }
+    #categories-container22 #box3 img{
+        width: 25vmax;
+        height: 25vmax;
+    }
+    #categories-container22 #box1 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container22 #box2 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+    #categories-container22 #box3 img:hover{
+        width: 80vw;
+        height: 80vw;
+    }
+
+    /*responsive contact us*/
+
+    #contactus-nav{
+        width: 100%;
+        height: 30px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #contactus-container{
+        width: 95%;
+        height: 50vw;
+        border: 0.2vw solid #000;
+        border-top-left-radius: 6vw;
+        margin-bottom: 20vw;
+        border-bottom-right-radius: 10vw;
+        margin-left: 2vw;
+        margin-top: 10vw;
+        padding-top: 4vw;
+    }
+    #contactus-left-part label{
+        font-size: 2.5vw;
+        font-weight: 700;
+    }
+    #contactus-left-part input[type="text"]{
+        width: 45vw;
+        height: 3vw;
+        margin-bottom: 4vw;
+        padding: 1vw 2vw;
+        margin-left: 8vw;
+    }
+    #contactus-left-part input[type="tel"]{
+        width: 45vw;
+        height: 3vw;
+        margin-bottom: 4vw;
+        padding: 1vw 2vw;
+        margin-left: 1.5vw;
+    }
+    #contactus-left-part input[type="email"]{
+        width: 45vw;
+        height: 3vw;
+        margin-bottom: 1vw;
+        padding: 1vw 2vw;
+        margin-left: 8.2vw;
+       
+    }
+    .submit{
+        width: 10vw;
+        height: 3vw;
+        font-size: 1.4vw;
+        margin-top: 3vw;
+        margin-left: 21vw;
+        border-radius: 0.5vw;
+        border: 0.2px solid #000;
+    }
+    .submit:hover{
+        background-color: black;
+        color: white;
+    }
+    .reset{
+        width: 10vw;
+        height: 3vw;
+        font-size: 1.4vw;
+        margin-left: 29vw;
+        border-radius: 0.5vw;
+        border: 0.2px solid #000;
+    }
+    .reset:hover{
+        background-color: black;
+        color: white;
+    }
+    #contactus-right-part{
+        padding-top: 18vw;
+        margin-left: 2vw;
+    }
+    #contactus-right-part video{
+        width: 15vw;
+        height: 15vw;
+    }
+
+    #footer3{
+        width: 100%;
+        height: 12vh;
+        padding-top: 10vw;
+        margin-top: 150vw;
+    }
+    #footer3-left h1:nth-child(1){
+        margin-left: 4vw;
+        font-size: 5vw;
+        font-weight: 700;
+    }
+    #footer3-left h1:nth-child(2){
+        margin-left: 4vw;
+        font-size: 2.6vw;
+        margin-top: 4vw;
+        color: white;
+    }
+     #footer3-left h1:nth-child(3){
+        margin-left: 4vw;
+        font-size: 2.6vw;
+        margin-top: 2vw;
+        color: white;
+    }
+     #footer3-left h1:nth-child(4){
+        margin-left: 4vw;
+        font-size: 2.6vw;
+        margin-top: 2vw;
+        color: white;
+    }
+     #footer3 h4:nth-child(2){
+        font-size: 2.2vw;
+        margin-top: 6vw;
+        color: white;
+        margin-left: 40vw;
+    }
+     #footer3 h4:nth-child(3){
+        font-size: 1.4vw;
+        margin-top: 1.6vw;
+        margin-left: 44vw;
+        color: white;
+    }
+}
+
+
+
+
+
+
+
